@@ -20,6 +20,8 @@ $(document).ready(() => {
       var newLi = li.cloneNode(li);
       newLi.innerText = match.userName;
       list.appendChild(newLi);
+      list.style.fontSize = "60px";
+      list.style.color = "orange";
     }
 
     // console.log(response.data);
