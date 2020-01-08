@@ -1,8 +1,8 @@
 $(document).ready(() => {
 
 
-  $("#submit").on("click", ()=>{
-
+  $("#submit").on("click", (e)=>{
+    e.preventDefault();
     let user =  $("#user").val();
     let city =  $("#city").val();
     let check = $("#check").val();

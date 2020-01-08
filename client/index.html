@@ -4,66 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<!-- bootstrap link -->
+   <!-- bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- javaScrip link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
-    <style>
-      
-      /* #some{
-        display: none;
-      }
-     */
-    </style>
-    
+    <link rel="stylesheet" href="css/style.css">
     <title>Friend Finder</title>
   </head>
   <body>
-
+<!-- main container starts -->
     <div class="container" id="form">
-    <form class="mt-4">
-      <!-- input for user name -->
-      <div class="col-md-4 mb-3">
-        <label for="validationDefault01">User Name</label>
-        <input type="text" class="form-control" id="user" >
-      </div>
-      <!-- select -->
-      <div class="col-md-3 mb-3">
-        <label>Cities</label>
-        <select class="custom-select" id="city" required>
-          <option selected disabled value="">Choose your city</option>
-          <option>San Francisco</option>
-          <option>Los Angeles</option>
-          <option>New York</option>
-        </select>
-      </div>
-      <!-- check -->
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="check" required>
-          <label class="form-check-label" for="invalidCheck2">
-            Do you like animals?
-          </label>
+<!-- nav bar starts here -->
+      <nav class="nav nav-pills nav-justified text-center">
+        <h2 class="nav-item nav-link active">Match Person:</h2>
+      </nav>
+<!-- form starts here -->
+      <form class="mt-4 bg-success" id="form">
+        <!-- input for user name -->
+        <div class="col-md-4 mb-3" id="name">
+          <label for="validationDefault01"><h5>User Name:</h5></label>
+          <input type="text" class="form-control" id="user" >
         </div>
+<!-- select city option-->
+        <div class="col-md-3 mb-3" id="city">
+          <label><h5>Cities:</h5></label>
+          <select class="custom-select" id="city" required>
+            <option selected disabled value="">Choose your city:</option>
+            <option>San Francisco</option>
+            <option>Los Angeles</option>
+            <option>New York</option>
+          </select>
+        </div>
+<!-- check-box -->
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check" required>
+            <label class="form-check-label"><h5>Do you like animals?</h5></label>
+          </div>
+        </div>
+<!--Match button -->
+        <button class="btn btn-primary mb-4" id="submit">Match</button>
+      </form>
+      <div id="list">
+        <p id="li"></p>
+
       </div>
-      <!-- button -->
-      <button class="btn btn-primary" id="submit">Match</button>
-    </form>
-
-              <div id="some">
-                  <ul id="list">
-                  </ul>
-                </div>
+<!-- main container ends -->
   </div>
-
-  
   </body>
-
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"
-  ></script>
-  <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-  <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
 </html>
