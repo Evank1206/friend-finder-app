@@ -1,6 +1,5 @@
+// jquery starts
 $(document).ready(() => {
-
-
   $("#submit").on("click", (e)=>{
     e.preventDefault();
     let user =  $("#user").val();
@@ -22,15 +21,9 @@ $(document).ready(() => {
       list.appendChild(newLi);
       list.style.fontSize = "60px";
       list.style.color = "orange";
+      list.style.borderBottom = "solid blue"
     }
 
-    // console.log(response.data);
-    // let pElement = document.createElement("p");
-    // pElement.append(response);
-    // response.data.matches.forEach(match => {
-    //   $("#some").append(match.userName);
-
-      // }); 
     });
   });
 });
